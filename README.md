@@ -34,7 +34,7 @@ As a **Fullstack Developer in progress**, I created Indexa to:
 
 ## 🧑‍💻 **Tech Stack**
 - **Frontend Framework**: Angular (TypeScript)
-- **Styling**: SCSS
+- **Styling**: CSS
 - **Package Manager**: npm
 - **Version Control**: Git
 
