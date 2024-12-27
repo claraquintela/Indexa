@@ -1,10 +1,13 @@
 <app-container>
   <app-header></app-header>
 
+  <input type="search" placeholder="Type to search" [(ngModel)]="textFilter" />
+
   @for (letter of alphabet; track letter) {
   <app-separador>
     {{ letter }}
   </app-separador>
-  <app-contato name="" phone=""></app-contato>
-  }
+  @for(contact of filterContactsByLetter(letter); track contact.id){
+  <app-contato [name]="contact.nome" [phone]="contact.telefone"></app-contato>
+  } }
 </app-container>
