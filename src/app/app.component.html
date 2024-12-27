@@ -1,3 +1,10 @@
 <app-container>
   <app-header></app-header>
+
+  @for (letter of alphabet; track letter) {
+  <app-separador>
+    {{ letter }}
+  </app-separador>
+  <app-contato name="" phone=""></app-contato>
+  }
 </app-container>
